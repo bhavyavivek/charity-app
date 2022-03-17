@@ -51,7 +51,7 @@ function LoginScreen() {
             formData.append('email', emailField.value);
             formData.append('password', passwordField.value);
 
-            fetch(`http://localhost:3001/user/login`, {
+            fetch(`${process.env.REACT_APP_BACKEND}/user/login`, {
                 method: 'POST',
                 // headers: {"Content-Type": "application/json"},
                 body: formData

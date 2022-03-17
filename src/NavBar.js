@@ -10,7 +10,8 @@ function NavBar(props) {
         '/features': 'text-secondary',
         '/pricing': 'text-secondary',
         '/faqs': 'text-secondary',
-        '/about': 'text-secondary'
+        '/about': 'text-secondary',
+        '/register': 'text-secondary'
     }
 
     let [ linkState, setLinkState ] = useState(initialState);
@@ -58,6 +59,7 @@ function NavBar(props) {
                     <li><Link to="/pricing" className={`nav-link px-2 ${linkState['/pricing']}`}>Pricing</Link></li>
                     <li><Link to="/faqs" className={`nav-link px-2 ${linkState['/faqs']}`}>FAQs</Link></li>
                     <li><Link to="/about" className={`nav-link px-2 ${linkState['/about']}`}>About</Link></li>
+                    { loginStatus === false && <li><Link to="/register" className={`nav-link px-2 ${linkState['/register']}`}>Register</Link></li> }
                 </ul>
 
                 <div className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

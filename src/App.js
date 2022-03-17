@@ -5,6 +5,7 @@ import AboutScreen from "./AboutScreen.js";
 import PricingScreen from "./PricingScreen.js";
 import ProfileSettingsScreen from "./ProfileSettingsScreen.js";
 import LoginScreen from "./LoginScreen.js";
+import RegistrationScreen from "./RegistrationScreen.js";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <LayoutRoute path="/pricing" component={PricingScreen} exact={true} />
                 <LayoutRoute path="/profile-settings" component={ProfileSettingsScreen} exact={true} />
                 <LayoutRoute path="/login" component={LoginScreen} exact={true} />
+                <LayoutRoute path="/register" component={RegistrationScreen} exact={true} />
             </Switch>
         </BrowserRouter>
     )
