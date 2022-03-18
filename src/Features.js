@@ -3,60 +3,67 @@ import './features.css'
 function Features() {
     return (
         <div className="container px-4 py-5" id="hanging-icons">
-            <h2 className="pb-2 border-bottom">Hanging icons</h2>
+            <h3 className="pb-2 border-bottom">Our mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth</h3>
             <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div className="col d-flex align-items-start">
-                <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg className="bi" width="1em" height="1em">
-                        <symbol id="toggles2" viewBox="0 0 16 16">
-                            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"></path>
-                            <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"></path>
-                            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
-                        </symbol>
-                    </svg>
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/seaturtle.jpeg" alt="" />
+                        <h2>Sea Turtles</h2>
+                        <p>According to the International Union for Conservation of Nature (IUCN), many turtle species are listed as threatened, endangered or critically endangered. For example, the ploughshare tortoise and radiated tortoise are estimated to be extinct in the next 45 years.</p>
+                        
+                    </div>
                 </div>
-                <div>
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                <a href="#" className="btn btn-primary">
-                    Primary button
-                </a>
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/panda.jpeg" alt="" />
+                        <h2>Panda</h2>
+                        <p>The biological diversity of the panda’s habitat is unparalleled in the temperate world and rivals that of tropical ecosystems, making the giant panda an excellent example of an umbrella species conferring protection on many other species where pandas live. In other words, when we protect pandas, we invariably protect other animals that live around them, such as multicolored pheasants, the golden monkey, takin, and crested ibis.</p>
+                        
+                    </div>
                 </div>
-            </div>
-            <div className="col d-flex align-items-start">
-                <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg className="bi" width="1em" height="1em">
-                    <symbol id="cpu-fill" viewBox="0 0 16 16">
-                        <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"></path>
-                        <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"></path>
-                    </symbol>
-                    </svg>
-                </div>
-                <div>
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                <a href="#" className="btn btn-primary">
-                    Primary button
-                </a>
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/penguins.jpeg" alt="" />
+                        <h2>Penguins</h2>
+                        <p>These species depend on sea ice for access to food and for places to breed. But the sea ice has been disappearing, and penguin populations along with it. 50% of the emperor penguins and 75% of the Adelie penguins will likely decline or disappear if global average temperatures rise above pre-industrial levels by just 2 degrees Celsius</p>
+                    
+                    </div>
                 </div>
             </div>
-            <div className="col d-flex align-items-start">
-                <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg className="bi" width="1em" height="1em">
-                        <symbol id="tools" viewBox="0 0 16 16">
-                            <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"></path>
-                        </symbol>
-                    </svg>
+
+            <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/elephants.jpeg" alt="" />
+                        <h2>Elephants</h2>
+                        <p>Today, the greatest threat to African elephants is wildlife crime, primarily poaching for the illegal ivory trade, while the greatest threat to Asian elephants is habitat loss, which results in human-elephant conflict. WWF has advocated for an end to commercial elephant ivory sales in the US and other major markets like China, Thailand, and Hong Kong as the most effective and efficient solution to end this illegal ivory trade.</p>
+                        
+                    </div>
                 </div>
-                <div>
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                <a href="#" className="btn btn-primary">
-                    Primary button
-                </a>
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/polarbear.jpeg" alt="" />
+                        <h2>Polar Bear</h2>
+                        <p>The loss of sea ice habitat from climate change is the biggest threat to the survival of polar bears. Other concerns for polar bears include lethal response to human-polar bear conflict, toxic pollution in the environment, and direct impacts from industrial development, such as disturbance of maternal dens or contact with an oil spill, and potential overhunting of some subpopulations.</p>
+                        
+                    </div>
+                </div>
+                <div className="col grid-image align-items-start">
+                    
+                    <div>
+                        <img src="./pictures/monkey.jpeg" alt="" />
+                        <h2>Orangutans</h2>
+                        <p>Orangutans are massively threatened by extinction through deforestation and shrinking habitat. This is why the serene apes with their reddish hair have already been on the International Union for Conservation of Nature (IUCN) Red List for years, and the number one reason why their numbers continue to decline.</p>
+                    
+                    </div>
                 </div>
             </div>
-            </div>
+
         </div>
     )
 }
