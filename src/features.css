@@ -17,6 +17,14 @@
   margin-bottom:10px;
 }
 
+.grid-image h2 {
+  text-align:center;
+  text-transform: uppercase;
+  margin: 5px;
+  padding: 3px;
+  color: #0d6efd;
+}
+
 .bi {
   vertical-align: -.125em;
   fill: currentColor;

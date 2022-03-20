@@ -11,7 +11,7 @@ function RegistrationScreen() {
     let passwordField;
     let phoneField;
     let checkBox;
-    let avatarInput;
+    let donateField;
 
     // FormData is a constructor for creating an object
     // that works like an HTML form element
@@ -20,19 +20,7 @@ function RegistrationScreen() {
     // errorsState is for tracking the validation errors
     const [errorsState, setErrorsState] = useState([]);
 
-    // attachFile() will append to formData the avatar file
-    const attachFile = (evt) => {
-        // Create an array from the file attachments
-        const files = Array.from(evt.target.files);
-
-        // For each attachment, append the file to formData
-        files.forEach(
-            (fileAttachment, index) => {
-                console.log('hre')
-                formData.append(index, fileAttachment);
-            }
-        );
-    }
+   
 
     function registerUser() {
 
@@ -50,6 +38,9 @@ function RegistrationScreen() {
         }
         if( passwordField.value.length === 0 ) {
             errors.push("Please enter valid password");
+        }
+        if( donateField.value.length === 0 ) {
+            errors.push("Please enter vadid donation amount");
         }
         if( checkBox.checked === false ) {
             errors.push("Please accept the terms & conditions");
@@ -72,6 +63,7 @@ function RegistrationScreen() {
             formData.append('email', emailField.value);
             formData.append('password', passwordField.value);
             formData.append('phone', phoneField.value);
+            formData.append('donate', donateField.value);
 
             fetch(
                 `${process.env.REACT_APP_BACKEND}/user/register`,
@@ -106,7 +98,7 @@ function RegistrationScreen() {
 
     // errorState 
     return (
-        <div className="container" style={{"margin-top": "5em", "max-width": "40em"}}>
+        <div className="container" style={{"marginTop": "5em", "maxWidth": "40em"}}>
             
             <h1>Register your Interest</h1>
             <br/>
@@ -151,16 +143,13 @@ function RegistrationScreen() {
             }
             className="field form-control" name="phone" type="text" />
 
-            <br/><br/>
-
-            <label>Upload your profile picture</label>
-            <input ref={(element)=>{ avatarInput = element}} 
-            onChange={attachFile}
-            onClick={(evt)=> { 
-                evt.target.value = null
-            }}
-            className="field form-control" id="photo" name="file" 
-            type="file" multiple="multiple"/>
+            <label>Donation Amount *</label>
+            <input ref={
+                function(thisInputField) {
+                    donateField = thisInputField
+                }
+            }
+            className="field form-control"  name="donate" type="text" />
 
             <br/><br/>
 
@@ -181,7 +170,7 @@ function RegistrationScreen() {
                     <button 
                     onClick={registerUser}
                     className="btn btn-primary"
-                    style={{"padding": "10px", "font-size": "16px"}}>
+                    style={{"padding": "10px", "fontSize": "16px"}}>
                         Submit
                     </button><br/><br/>
                 </div>

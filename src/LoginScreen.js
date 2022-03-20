@@ -96,7 +96,7 @@ function LoginScreen() {
 
     if ( state === "successful" ) {
         return (
-            <Redirect to="/profile-settings" />
+            <Redirect to="/" />
         )
     } else {
         return (
